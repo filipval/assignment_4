@@ -13,18 +13,20 @@
       <div class="components">
         <!-- Component Menu Structure -->
         <div class="component__titles--container">
-          <li>
-            <button class="component__title component__title--active">
-              Buttons
-            </button>
-          </li>
-          <li><button class="component__title">Cards</button></li>
-          <li><button class="component__title">Modals</button></li>
-          <li><button class="component__title">Dropdowns</button></li>
-          <li><button class="component__title">Toast</button></li>
-          <li><button class="component__title">Alerts</button></li>
-          <li><button class="component__title">Tooltips</button></li>
-          <li><button class="component__title">Accordions</button></li>
+          <ul>
+            <li>
+              <button class="component__title component__title--active">
+                Buttons
+              </button>
+            </li>
+            <li><button class="component__title">Cards</button></li>
+            <li><button class="component__title">Modals</button></li>
+            <li><button class="component__title">Dropdowns</button></li>
+            <li><button class="component__title">Toast</button></li>
+            <li><button class="component__title">Alerts</button></li>
+            <li><button class="component__title">Tooltips</button></li>
+            <li><button class="component__title">Accordions</button></li>
+          </ul>
         </div>
         <!-- Components -->
         <div class="component__content--container">
@@ -37,25 +39,25 @@
                 states.
               </p>
             </div>
-            <h3>Simple Example</h3>
+            <h3 class="component__example-text">Simple Example</h3>
             <div class="component__button--example">
-              <button>Click Me</button>
+              <button class="button__primary">Click Me</button>
             </div>
-            <h3>Different Variants</h3>
+            <h3 class="component__example-text">Different Variants</h3>
             <div class="component__button--variants">
-              <button>Primary</button>
-              <button>Secondary</button>
-              <button>Tertiary</button>
-              <button>Ghost</button>
-              <button>Floating</button>
-              <button>Disabled</button>
+              <button class="button__primary">Primary</button>
+              <button class="button__secondary">Secondary</button>
+              <button class="button__tertiary">Tertiary</button>
+              <button class="button__ghost">Ghost</button>
+              <button class="button__floating">Floating</button>
+              <button class="button__disabled">Disabled</button>
             </div>
-            <h3>Different Sizes</h3>
+            <h3 class="component__example-text">Different Sizes</h3>
             <div class="component__button--sizes">
-              <button>Size L</button>
-              <button>Size M</button>
-              <button>Size S</button>
-              <button>Size XS</button>
+              <button class="button__size-l">Size L</button>
+              <button class="button__size-m">Size M</button>
+              <button class="button__size-s">Size S</button>
+              <button class="button__size-xs">Size XS</button>
             </div>
           </article>
           <!-- Cards -->
@@ -67,14 +69,16 @@
                 effects to emphasize interactivity.
               </p>
             </div>
-            <div class="component__card--elevated">
-              <p>Elevated</p>
-            </div>
-            <div class="component__card--filled">
-              <p>Filled</p>
-            </div>
-            <div class="component__card--outlined">
-              <p>Outlined</p>
+            <div class="component__cards">
+              <div class="component__card--elevated">
+                <p>Elevated</p>
+              </div>
+              <div class="component__card--filled">
+                <p>Filled</p>
+              </div>
+              <div class="component__card--outlined">
+                <p>Outlined</p>
+              </div>
             </div>
           </article>
           <!-- Modals -->
@@ -86,7 +90,7 @@
                 information, with options to close or dismiss.
               </p>
             </div>
-            <h3>Simple Example</h3>
+            <h3 class="component__example-text">Simple Example</h3>
             <div class="component__modal--example">
               <button>Open Me</button>
             </div>
@@ -100,7 +104,7 @@
                 other interactive element.
               </p>
             </div>
-            <h3>Simple Example</h3>
+            <h3 class="component__example-text">Simple Example</h3>
             <div class="component__dropdown--example">
               <select name="dropdown" id="dropdown">
                 <option value="">Option 1</option>
@@ -120,7 +124,7 @@
                 updates, usually in a corner of the screen.
               </p>
             </div>
-            <h3>Simple Example</h3>
+            <h3 class="component__example-text">Simple Example</h3>
             <div class="component__toast--example">
               <button>Show Toast</button>
             </div>
@@ -134,7 +138,7 @@
                 often styled with distinct colors for clarity.
               </p>
             </div>
-            <h3>Static Alert</h3>
+            <h3 class="component__example-text">Static Alert</h3>
             <div class="component__alert--static">
               <div>
                 <p><strong>Alert Title</strong></p>
@@ -144,7 +148,7 @@
                 </p>
               </div>
             </div>
-            <h3>Closeable Alert</h3>
+            <h3 class="component__example-text">Closeable Alert</h3>
             <div class="component__alert--closeable">
               <div>
                 <p><strong>Alert Title</strong></p>
@@ -165,7 +169,7 @@
                 disrupting the layout.
               </p>
             </div>
-            <h3>Simple Example</h3>
+            <h3 class="component__example-text">Simple Example</h3>
             <div class="component__tooltip--example">
               <button>This button has a tooltip</button>
             </div>
@@ -179,8 +183,8 @@
                 visibility for sections as needed.
               </p>
             </div>
-            <h3>Simple Example</h3>
-            <div>
+            <h3 class="component__example-text">Simple Example</h3>
+            <div class="component__accordion--example">
               <div>
                 <p>Accordion Title</p>
                 <button>x</button>
