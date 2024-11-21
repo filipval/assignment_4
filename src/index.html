@@ -5,10 +5,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/components.css" />
     <title>Design System</title>
   </head>
   <body>
+    <main>
+      <div class="components">
+        <!-- Component Menu Structure -->
+        <div class="component__titles--container">
+          <li>
+            <button class="component__title component__title--active">
+              Buttons
+            </button>
+          </li>
+          <li><button class="component__title">Cards</button></li>
+          <li><button class="component__title">Modals</button></li>
+          <li><button class="component__title">Dropdowns</button></li>
+          <li><button class="component__title">Toast</button></li>
+          <li><button class="component__title">Alerts</button></li>
+          <li><button class="component__title">Tooltips</button></li>
+          <li><button class="component__title">Accordions</button></li>
+        </div>
+        <!-- Components -->
+        <div class="component__content--container">
+          <!-- Buttons -->
+          <article class="component__content component__content--active">
+            <div class="component__introduction">
+              <p>
+                <i>Buttons</i> are interactive elements for actions like
+                submitting or navigating, with hover, active, and disabled
+                states.
+              </p>
+            </div>
+            <h3>Simple Example</h3>
+            <div class="component__button--example">
+              <button>Click Me</button>
+            </div>
+            <h3>Different Variants</h3>
+            <div class="component__button--variants">
+              <button>Primary</button>
+              <button>Secondary</button>
+              <button>Tertiary</button>
+              <button>Ghost</button>
+              <button>Floating</button>
+              <button>Disabled</button>
+            </div>
+            <h3>Different Sizes</h3>
+            <div class="component__button--sizes">
+              <button>Size L</button>
+              <button>Size M</button>
+              <button>Size S</button>
+              <button>Size XS</button>
+            </div>
+          </article>
+          <!-- Cards -->
+          <article class="component__content">
+            <div class="component__introduction">
+              <p>
+                <i>Cards</i> are container elements used to group related
+                content such as text, images, or links, often styled with hover
+                effects to emphasize interactivity.
+              </p>
+            </div>
+            <div class="component__card--elevated">
+              <p>Elevated</p>
+            </div>
+            <div class="component__card--filled">
+              <p>Filled</p>
+            </div>
+            <div class="component__card--outlined">
+              <p>Outlined</p>
+            </div>
+          </article>
+          <!-- Modals -->
+          <article class="component__content">
+            <div class="component__introduction">
+              <p>
+                <i>Modals</i> are overlay components that display content in a
+                focused view, often used for alerts, forms, or additional
+                information, with options to close or dismiss.
+              </p>
+            </div>
+            <h3>Simple Example</h3>
+            <div class="component__modal--example">
+              <button>Open Me</button>
+            </div>
+          </article>
+          <!-- Dropdowns -->
+          <article class="component__content">
+            <div class="component__introduction">
+              <p>
+                <i>Dropdowns</i> are expandable menus that allow users to select
+                one option from a list, displayed when triggered by a button or
+                other interactive element.
+              </p>
+            </div>
+            <h3>Simple Example</h3>
+            <div class="component__dropdown--example">
+              <select name="dropdown" id="dropdown">
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <option value="">Option 3</option>
+                <option value="">Option 4</option>
+                <option value="">Option 5</option>
+              </select>
+            </div>
+          </article>
+          <!-- Toast -->
+          <article class="component__content">
+            <div class="component__introduction">
+              <p>
+                <i>Toast</i> notifications are temporary, non-intrusive messages
+                that appear briefly to inform users of system feedback or
+                updates, usually in a corner of the screen.
+              </p>
+            </div>
+            <h3>Simple Example</h3>
+            <div class="component__toast--example">
+              <button>Show Toast</button>
+            </div>
+          </article>
+          <!-- Alerts -->
+          <article class="component__content">
+            <div class="component__introduction">
+              <p>
+                <i>Alerts</i> are message components designed to notify users of
+                important information such as success, errors, or warnings,
+                often styled with distinct colors for clarity.
+              </p>
+            </div>
+            <h3>Static Alert</h3>
+            <div class="component__alert--static">
+              <div>
+                <p><strong>Alert Title</strong></p>
+                <p>
+                  Message inside alert that notify users of important
+                  information such as success, errors, or warnings.
+                </p>
+              </div>
+            </div>
+            <h3>Closeable Alert</h3>
+            <div class="component__alert--closeable">
+              <div>
+                <p><strong>Alert Title</strong></p>
+                <p>
+                  Message inside alert that notify users of important
+                  information such as success, errors, or warnings.
+                </p>
+                <button>x</button>
+              </div>
+            </div>
+          </article>
+          <!-- Tooltips -->
+          <article class="component__content">
+            <div class="component__introduction">
+              <p>
+                <i>Tooltips</i> are small, hover-activated pop-ups that provide
+                additional information or guidance about an element without
+                disrupting the layout.
+              </p>
+            </div>
+            <h3>Simple Example</h3>
+            <div class="component__tooltip--example">
+              <button>This button has a tooltip</button>
+            </div>
+          </article>
+          <!-- Accordions -->
+          <article class="component__content">
+            <div class="component__introduction">
+              <p>
+                <i>Accordions</i> are collapsible components that organize
+                content into expandable panels, allowing users to toggle
+                visibility for sections as needed.
+              </p>
+            </div>
+            <h3>Simple Example</h3>
+            <div>
+              <div>
+                <p>Accordion Title</p>
+                <button>x</button>
+              </div>
+              <div>
+                <p>
+                  Message inside accordion. Accordions are collapsible
+                  components that organize content into expandable panels,
+                  allowing users to toggle visibility.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
     <script src="./js/app.js"></script>
   </body>
 </html>
