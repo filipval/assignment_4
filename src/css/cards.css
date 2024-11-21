@@ -1,0 +1,29 @@
+/* Cards */
+
+.component__cards {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.component__card--elevated,
+.component__card--filled,
+.component__card--outlined {
+  height: 230px;
+  width: 30%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.component__card--elevated {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.component__card--filled {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.component__card--outlined {
+  border: 2px solid #000000;
+}

@@ -50,10 +50,12 @@ body {
 /* Components Content */
 
 .component__content {
+  display: none;
   padding: 50px;
 }
 
 .component__content--active {
+  display: block;
   padding: 98px 30px;
 }
 
@@ -84,124 +86,4 @@ body {
   padding: 25px;
   margin-bottom: 30px;
   width: 100%;
-}
-
-/* Buttons */
-
-.button__primary,
-.button__secondary,
-.button__tertiary,
-.button__ghost,
-.button__floating,
-.button__disabled,
-.button__size-l,
-.button__size-m,
-.button__size-s,
-.button__size-xs {
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  margin-right: 20px;
-}
-
-.button__primary,
-.button__size-l,
-.button__size-m,
-.button__size-s,
-.button__size-xs {
-  background-color: #000000;
-  color: white;
-}
-
-.button__primary:hover,
-.button__size-l:hover,
-.button__size-m:hover,
-.button__size-s:hover,
-.button__size-xs:hover {
-  background-color: #514e46;
-}
-
-.button__primary:active,
-.button__size-l:active,
-.button__size-m:active,
-.button__size-s:active,
-.button__size-xs:active {
-  background-color: #d9bd3f;
-  color: #000000;
-}
-
-.button__secondary {
-  background-color: #d9bd3f;
-}
-
-.button__secondary:hover {
-  background-color: #c4a412;
-}
-
-.button__secondary:active {
-  background-color: #d9bd3f;
-}
-
-.button__tertiary {
-  background-color: #f2e197;
-  border: 2px solid #000000;
-}
-
-.button__tertiary:hover {
-  background-color: #d9bd3f;
-}
-
-.button__tertiary:active {
-  background-color: #f2e197;
-}
-
-.button__ghost {
-  background-color: #f2e197;
-}
-
-.button__ghost:hover {
-  background-color: #d9bd3f;
-}
-
-.button__ghost:active {
-  background-color: #f2e197;
-}
-
-.button__floating {
-  background-color: #f2e197;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.button__floating:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.button__floating:active {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.button__disabled {
-  cursor: not-allowed;
-  background-color: #c4c0ac;
-}
-
-.button__size-l {
-  padding: 15px 25px;
-}
-
-.button__size-s {
-  font-size: 0.9rem;
-  padding: 10px 15px;
-}
-
-.button__size-xs {
-  font-size: 0.7rem;
-  padding: 8px 13px;
-}
-
-/* Cards */
-
-.component__cards {
-  display: flex;
 }
