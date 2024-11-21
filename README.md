@@ -1,6 +1,6 @@
 <h1>Design System</h1>
 <p>Work in Progress.</p>
-<p>Design System with Interactive Components</p>
+<p>Design System with Interactive Components.</p>
 <h2>Netlify</h2>
 https://component-system.netlify.app/
 <h2>GitHub Repository</h2>
