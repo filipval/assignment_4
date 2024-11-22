@@ -15,6 +15,7 @@
   padding: 10px 20px;
   font-size: 1rem;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .button__primary,
@@ -31,7 +32,8 @@
 .button__size-m:hover,
 .button__size-s:hover,
 .button__size-xs:hover {
-  background-color: #514e46;
+  background-color: #d9bd3f;
+  color: #000000;
 }
 
 .button__primary:active,
@@ -39,7 +41,7 @@
 .button__size-m:active,
 .button__size-s:active,
 .button__size-xs:active {
-  background-color: #d9bd3f;
+  background-color: #f2e197;
   color: #000000;
 }
 
