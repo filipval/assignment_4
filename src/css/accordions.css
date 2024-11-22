@@ -11,12 +11,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #d9bd3f;
+  background-color: var(--color-secondary);
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-base);
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid var(--color-black);
 }
 
 .accordion__title--container-active {
@@ -25,8 +25,8 @@
 }
 
 .accordion__title {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
 }
 
 /* --------------------------------------- */
@@ -35,12 +35,12 @@
 .accordion__toggle-button {
   cursor: pointer;
   border: none;
-  background-color: #d9bd3f;
+  background-color: var(--color-secondary);
 }
 
 .accordion__toggle-arrow {
   transition: transform 0.3 linear;
-  font-size: 17px;
+  font-size: var(--font-size-base);
 }
 
 /* --------------------------------------- */
@@ -52,13 +52,13 @@
   padding: 0 1rem;
   border-radius: 0 0 20px 20px;
   transition: max-height 0.3 linear;
-  background-color: #f2e197;
+  background-color: var(--color-background);
 }
 
 .accordion__content--container-active {
   padding: 1rem;
   max-height: 500px;
-  border: 2px solid black;
+  border: 2px solid var(--color-black);
 }
 
 .rotate-arrow {

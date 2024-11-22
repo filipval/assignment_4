@@ -1,10 +1,10 @@
 /* General Button Styles */
 .button {
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  margin-right: 20px;
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-base);
+  font-size: var(--font-size-base);
+  margin-right: var(--margin-base);
   cursor: pointer;
 }
 
@@ -12,80 +12,80 @@
 /* Primary Button */
 
 .button__primary {
-  background-color: #000000;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .button__primary:hover {
-  background-color: #d9bd3f;
-  color: #000000;
+  background-color: var(--color-secondary);
+  color: var(--color-black);
 }
 
 .button__primary:active {
-  background-color: #f2e197;
-  color: #000000;
+  background-color: var(--color-background);
+  color: var(--color-black);
 }
 
 /* --------------------------------------- */
 /* Secondary Button */
 
 .button__secondary {
-  background-color: #d9bd3f;
+  background-color: var(--color-secondary);
 }
 
 .button__secondary:hover {
-  background-color: #c4a412;
+  background-color: var(--color-secondary-hover);
 }
 
 .button__secondary:active {
-  background-color: #d9bd3f;
+  background-color: var(--color-secondary);
 }
 
 /* --------------------------------------- */
 /* Tertiary Button */
 
 .button__tertiary {
-  background-color: #f2e197;
-  border: 2px solid #000000;
+  background-color: var(--color-background);
+  border: 2px solid var(--color-black);
 }
 
 .button__tertiary:hover {
-  background-color: #d9bd3f;
+  background-color: var(--color-secondary);
 }
 
 .button__tertiary:active {
-  background-color: #f2e197;
+  background-color: var(--color-background);
 }
 
 /* --------------------------------------- */
 /* Ghost Button */
 
 .button__ghost {
-  background-color: #f2e197;
+  background-color: var(--color-background);
 }
 
 .button__ghost:hover {
-  background-color: #d9bd3f;
+  background-color: var(--color-secondary);
 }
 
 .button__ghost:active {
-  background-color: #f2e197;
+  background-color: var(--color-background);
 }
 
 /* --------------------------------------- */
 /* Floating Button */
 
 .button__floating {
-  background-color: #f2e197;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-light);
 }
 
 .button__floating:hover {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-hover);
 }
 
 .button__floating:active {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-light);
 }
 
 /* --------------------------------------- */
@@ -93,18 +93,18 @@
 
 .button__disabled {
   cursor: not-allowed;
-  background-color: #c4c0ac;
+  background-color: var(--color-disabled);
 }
 
 /* --------------------------------------- */
 /* Button Sizes */
 
 .button__size-l {
-  padding: 15px 25px;
+  padding: var(--padding-large);
 }
 
 .button__size-s {
-  font-size: 0.9rem;
+  font-size: var(--font-size-small);
   padding: 10px 15px;
 }
 

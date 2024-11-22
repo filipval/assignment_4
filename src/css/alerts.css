@@ -4,16 +4,16 @@
   width: 40%;
   text-align: start;
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-base);
+  font-size: var(--font-size-base);
 }
 
 /* --------------------------------------- */
 /* Static Alert */
 
 .component__alert--static {
-  background-color: #c4c0ac;
+  background-color: var(--color-disabled);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -28,7 +28,7 @@
 
 .component__alert--closeable {
   align-items: center;
-  background-color: #d9bd3f;
+  background-color: var(--color-secondary);
 }
 
 .closeable__content {
@@ -37,7 +37,7 @@
 }
 
 .alert__button {
-  background-color: #d9bd3f;
+  background-color: var(--color-secondary);
   border: none;
   margin-bottom: auto;
   cursor: pointer;

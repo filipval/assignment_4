@@ -14,31 +14,31 @@
 
 .component__modal-button {
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-base);
+  font-size: var(--font-size-base);
   cursor: pointer;
-  background-color: #000000;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .component__modal-button:hover {
-  background-color: #d9bd3f;
-  color: #000000;
+  background-color: var(--color-secondary);
+  color: var(--color-black);
 }
 
 .component__modal-button:active {
-  background-color: #f2e197;
-  color: #000000;
+  background-color: var(--color-background);
+  color: var(--color-black);
 }
 
 /* --------------------------------------- */
 /* Modal Popup */
 
 .modal__content {
-  border: 2px solid black;
-  background-color: #f2e197;
-  border-radius: 35px;
+  border: 2px solid var(--color-black);
+  background-color: var(--color-background);
+  border-radius: var(--border-radius-large);
   padding: 25px;
   width: 30%;
 }
@@ -48,12 +48,12 @@
 }
 
 .modal__title h3 {
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 }
 
 .modal__text {
-  border: 2px solid black;
-  border-radius: 35px;
+  border: 2px solid var(--color-black);
+  border-radius: var(--border-radius-large);
   padding: 20px 25px 50px;
 }
 
@@ -68,47 +68,47 @@
 }
 
 .modal__button-close {
-  border: 2px solid black;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
+  border: 2px solid var(--color-black);
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-base);
+  font-size: var(--font-size-base);
   margin-left: 10px;
-  margin-top: 20px;
+  margin-top: var(--margin-base);
   cursor: pointer;
-  background-color: #f2e197;
-  color: black;
+  background-color: var(--color-background);
+  color: var(--color-black);
 }
 
 .modal__button-close:hover {
-  background-color: #d9bd3f;
-  color: #000000;
+  background-color: var(--color-secondary);
+  color: var(--color-black);
 }
 
 .modal__button-close:active {
-  background-color: #f2e197;
-  color: #000000;
+  background-color: var(--color-background);
+  color: var(--color-black);
 }
 
 .modal__button-ok {
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
+  border-radius: var(--border-radius-medium);
+  padding: var(--padding-base);
+  font-size: var(--font-size-base);
   margin-left: 10px;
-  margin-top: 20px;
+  margin-top: var(--margin-base);
   cursor: pointer;
-  background-color: #000000;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .modal__button-ok:hover {
-  background-color: #d9bd3f;
-  color: #000000;
+  background-color: var(--color-secondary);
+  color: var(--color-black);
 }
 
 .modal__button-ok:active {
-  background-color: #f2e197;
-  color: #000000;
+  background-color: var(--color-background);
+  color: var(--color-black);
 }
 
 /* --------------------------------------- */

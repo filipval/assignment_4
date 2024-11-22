@@ -1,6 +1,6 @@
 /* Container for Cards */
 .component__cards {
-  margin-top: 70px;
+  margin-top: var(--padding-content);
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -13,7 +13,7 @@
 .component__card {
   height: 230px;
   width: 30%;
-  border-radius: 20px;
+  border-radius: var(--border-radius-medium);
   padding: 20px;
   cursor: pointer;
 }
@@ -22,12 +22,12 @@
 /* Elevated Card */
 
 .component__card--elevated {
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-light);
 }
 
 .component__card--elevated:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-hover);
 }
 
 .component__card--elevated:active {
@@ -38,13 +38,13 @@
 /* Filled Card */
 
 .component__card--filled {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .component__card--filled:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-hover);
 }
 
 .component__card--filled:active {
@@ -55,12 +55,12 @@
 /* Outlined Card */
 
 .component__card--outlined {
-  border: 2px solid #000000;
+  border: 2px solid var(--color-black);
 }
 
 .component__card--outlined:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-hover);
 }
 
 .component__card--outlined:active {
