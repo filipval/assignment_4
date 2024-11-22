@@ -1,28 +1,41 @@
-/* Cards */
-
+/* Container for Cards */
 .component__cards {
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.component__card--elevated,
-.component__card--filled,
-.component__card--outlined {
+/* --------------------------------------- */
+/* General Card Styles */
+
+.component__card {
   height: 230px;
   width: 30%;
   border-radius: 20px;
   padding: 20px;
+  cursor: pointer;
 }
 
+/* --------------------------------------- */
+/* Elevated Card */
+
 .component__card--elevated {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
 }
 
 .component__card--elevated:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
+
+.component__card--elevated:active {
+  transform: translateY(0px);
+}
+
+/* --------------------------------------- */
+/* Filled Card */
 
 .component__card--filled {
   background-color: #000000;
@@ -30,15 +43,35 @@
 }
 
 .component__card--filled:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
 }
+
+.component__card--filled:active {
+  transform: translateY(0px);
+}
+
+/* --------------------------------------- */
+/* Outlined Card */
 
 .component__card--outlined {
   border: 2px solid #000000;
 }
 
 .component__card--outlined:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.component__card--outlined:active {
+  transform: translateY(0px);
+}
+
+/* --------------------------------------- */
+/* Responsive Adjustments */
+
+@media screen and (max-width: 820px) {
+}
+
+@media screen and (max-width: 430px) {
 }

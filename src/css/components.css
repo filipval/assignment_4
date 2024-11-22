@@ -7,6 +7,7 @@ body {
   overflow: hidden;
 }
 
+/* --------------------------------------- */
 /* Components Menu */
 
 .components {
@@ -48,6 +49,7 @@ body {
   color: #000000;
 }
 
+/* --------------------------------------- */
 /* Components Content */
 
 .component__content {
@@ -78,8 +80,7 @@ body {
 .component__modal--example,
 .component__dropdown--example,
 .component__toast--example,
-.component__alert--static,
-.component__alert--closeable,
+.component__alert,
 .component__tooltip--example,
 .component__accordion--example {
   border: 2px solid black;
@@ -87,4 +88,13 @@ body {
   padding: 25px;
   margin-bottom: 30px;
   width: 100%;
+}
+
+/* --------------------------------------- */
+/* Responsive Adjustments */
+
+@media screen and (max-width: 820px) {
+}
+
+@media screen and (max-width: 430px) {
 }

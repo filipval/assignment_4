@@ -1,7 +1,11 @@
+/* Accordion Container */
 .accordion {
   width: 40%;
   height: auto;
 }
+
+/* --------------------------------------- */
+/* Accordion Title */
 
 .accordion__title--container {
   display: flex;
@@ -25,6 +29,9 @@
   font-weight: 400;
 }
 
+/* --------------------------------------- */
+/* Accordion Arrow */
+
 .accordion__toggle-button {
   cursor: pointer;
   border: none;
@@ -35,6 +42,9 @@
   transition: transform 0.3 linear;
   font-size: 17px;
 }
+
+/* --------------------------------------- */
+/* Accordion Content */
 
 .accordion__content--container {
   max-height: 0;
@@ -53,4 +63,13 @@
 
 .rotate-arrow {
   transform: rotate(180deg);
+}
+
+/* --------------------------------------- */
+/* Responsive Adjustments */
+
+@media screen and (max-width: 820px) {
+}
+
+@media screen and (max-width: 430px) {
 }

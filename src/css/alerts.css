@@ -1,0 +1,58 @@
+/* General Alert Styles */
+.component__alert--static,
+.component__alert--closeable {
+  width: 40%;
+  text-align: start;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+/* --------------------------------------- */
+/* Static Alert */
+
+.component__alert--static {
+  background-color: #c4c0ac;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.alert__title {
+  padding: 5px 0;
+}
+
+/* --------------------------------------- */
+/* Closeable Alert */
+
+.component__alert--closeable {
+  align-items: center;
+  background-color: #d9bd3f;
+}
+
+.closeable__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert__button {
+  background-color: #d9bd3f;
+  border: none;
+  margin-bottom: auto;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.alert__closebale-button {
+  font-size: 20px;
+}
+
+/* --------------------------------------- */
+/* Responsive Adjustments */
+
+@media screen and (max-width: 820px) {
+}
+
+@media screen and (max-width: 430px) {
+}

@@ -1,8 +1,11 @@
-/* Dropdown */
+/* Dropdown Container */
 .component__dropdown--example {
   position: relative;
   display: inline-block;
 }
+
+/* --------------------------------------- */
+/* Dropdown Button */
 
 .dropdown__button {
   width: 40%;
@@ -29,6 +32,9 @@
   transform: rotate(180deg);
 }
 
+/* --------------------------------------- */
+/* Dropdown Menu */
+
 .dropdown {
   display: none;
   position: absolute;
@@ -36,10 +42,14 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 5px;
   border-radius: 5px;
-  z-index: 1000;
   width: 38%;
   border-radius: 20px;
+  z-index: 1000;
+  overflow: hidden;
 }
+
+/* --------------------------------------- */
+/* Dropdown Items */
 
 .dropdown__item {
   display: block;
@@ -62,8 +72,20 @@
   border-radius: 0 0 20px 20px;
 }
 
+/* --------------------------------------- */
+/* Separator Line */
+
 hr {
   width: 93%;
   display: flex;
   justify-self: center;
+}
+
+/* --------------------------------------- */
+/* Responsive Adjustments */
+
+@media screen and (max-width: 820px) {
+}
+
+@media screen and (max-width: 430px) {
 }
