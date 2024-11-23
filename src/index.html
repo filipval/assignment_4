@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="./css/alerts.css" />
     <link rel="stylesheet" href="./css/tooltips.css" />
     <link rel="stylesheet" href="./css/accordions.css" />
-
     <title>Design System</title>
   </head>
   <body>
@@ -26,7 +25,7 @@
       <div class="components">
         <!-- Component Menu Structure -->
         <div class="component__titles--container">
-          <ul>
+          <ul class="component__titles">
             <li>
               <button class="component__title component__title--active">
                 Buttons
@@ -40,6 +39,12 @@
             <li><button class="component__title">Tooltips</button></li>
             <li><button class="component__title">Accordions</button></li>
           </ul>
+        </div>
+        <!-- Components Menu Toggle -->
+        <div class="menu__toggle--button-container">
+          <button class="menu__toggle-button .menu__toggle-button--active">
+            <i class="fa-solid fa-bars fa-2x menu__toggle-hamburger"></i>
+          </button>
         </div>
         <!-- Components -->
         <div class="component__content--container">

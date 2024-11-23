@@ -1,10 +1,34 @@
-// Tabs: Component Titles and Content
 const componentTitleButtons = document.querySelectorAll(".component__title");
 const componentContent = document.querySelectorAll(".component__content");
+const componentTitlesContainer = document.querySelector(
+  ".component__titles--container"
+);
+const toggleMenuButton = document.querySelector(".menu__toggle-button");
 
+// Toggle menu open/close
+toggleMenuButton.addEventListener("click", () => {
+  // Add/remove active class to show/hide the menu
+  componentTitlesContainer.classList.toggle(
+    "component__titles--container--active"
+  );
+});
+
+// If the click is outside the menu or toggle button, close the menu
+document.addEventListener("click", (event) => {
+  if (
+    !componentTitlesContainer.contains(event.target) &&
+    !toggleMenuButton.contains(event.target)
+  ) {
+    componentTitlesContainer.classList.remove(
+      "component__titles--container--active"
+    );
+  }
+});
+
+// Add event listeners to each title button for tab navigation
 componentTitleButtons.forEach((titleButton, index) => {
   titleButton.addEventListener("click", () => {
-    // Remove active classes from all buttons and content
+    // Remove active class from all buttons and content
     componentTitleButtons.forEach((button) =>
       button.classList.remove("component__title--active")
     );
@@ -25,16 +49,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const okButton = document.getElementById("okButton");
   const modal = document.getElementById("modal");
 
+  // Check if modal elements exist before adding event listeners
   if (openModalButton && closeModalButton && modal) {
     openModalButton.addEventListener("click", () => {
+      // Show modal when open button is clicked
       modal.style.display = "flex";
     });
 
     closeModalButton.addEventListener("click", () => {
+      // Hide modal when Close button is clicked
       modal.style.display = "none";
     });
 
     okButton.addEventListener("click", () => {
+      // Hide modal when OK button is clicked
       modal.style.display = "none";
     });
   }
@@ -49,7 +77,7 @@ document
     const items = dropdown.querySelectorAll(".dropdown__item");
 
     button.addEventListener("click", () => {
-      // Toggle dropdown menu visibility
+      // Toggle dropdown visibility
       button.classList.toggle("active");
       menu.style.display = menu.style.display === "block" ? "none" : "block";
     });
@@ -58,7 +86,7 @@ document
       item.addEventListener("click", (e) => {
         e.preventDefault();
 
-        // Update button text and retain arrow icon
+        // Update button text with selected item and keep arrow icon
         const arrow = button.querySelector(".dropdown__arrow");
         button.innerHTML = `${item.textContent} <i class="${arrow.className}"></i>`;
       });
@@ -72,11 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (showToastButton && toast) {
     showToastButton.addEventListener("click", () => {
-      // Show toast
+      // Show toast with visible class and hide after 3 seconds
       toast.classList.remove("hidden");
       toast.classList.add("visible");
 
-      // Hide toast after 3 seconds
       setTimeout(() => {
         toast.classList.remove("visible");
         toast.classList.add("hidden");
@@ -96,9 +123,10 @@ const accordionToggleLogos = document.querySelectorAll(
   ".accordion__toggle-arrow"
 );
 
+// Toggle accordion sections on title click
 titleContainers.forEach((title, index) => {
   title.addEventListener("click", () => {
-    // Toggle active state for accordion content and arrow icon
+    // Toggle active class on the content and rotate the arrow
     descriptionContainers[index].classList.toggle(
       "accordion__content--container-active"
     );

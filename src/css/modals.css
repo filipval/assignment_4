@@ -113,9 +113,33 @@
 
 /* --------------------------------------- */
 /* Responsive Adjustments */
+/* Tablet */
 
 @media screen and (max-width: 820px) {
+  .component__modal-button,
+  .modal__content,
+  .modal__button-close,
+  .modal__button-ok {
+    font-size: 23px;
+  }
+
+  .modal__content {
+    width: 50%;
+  }
 }
 
+/* --------------------------------------- */
+/* Mobile */
+
 @media screen and (max-width: 430px) {
+  .component__modal-button,
+  .modal__content,
+  .modal__button-close,
+  .modal__button-ok {
+    font-size: 19px;
+  }
+
+  .modal__content {
+    width: 90%;
+  }
 }

@@ -83,9 +83,37 @@ hr {
 
 /* --------------------------------------- */
 /* Responsive Adjustments */
+/* Tablet */
 
 @media screen and (max-width: 820px) {
+  .dropdown__button,
+  .dropdown__item {
+    font-size: 23px;
+  }
+
+  .dropdown__arrow {
+    font-size: 20px;
+  }
 }
 
+/* --------------------------------------- */
+/* Mobile */
+
 @media screen and (max-width: 430px) {
+  .dropdown__button {
+    font-size: 19px;
+    width: 80%;
+  }
+
+  .dropdown {
+    width: 71%;
+  }
+
+  .dropdown__item {
+    font-size: 19px;
+  }
+
+  .dropdown__arrow {
+    font-size: 18px;
+  }
 }

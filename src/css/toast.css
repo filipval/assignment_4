@@ -55,9 +55,37 @@
 
 /* --------------------------------------- */
 /* Responsive Adjustments */
+/* Tablet */
 
 @media screen and (max-width: 820px) {
+  .toast__button,
+  .toast {
+    font-size: 23px;
+  }
+
+  .toast__container {
+    left: 25%;
+  }
+
+  .toast {
+    width: 50%;
+  }
 }
 
+/* --------------------------------------- */
+/* Mobile */
+
 @media screen and (max-width: 430px) {
+  .toast__button,
+  .toast {
+    font-size: 19px;
+  }
+
+  .toast__container {
+    left: 10%;
+  }
+
+  .toast {
+    width: 80%;
+  }
 }

@@ -50,9 +50,23 @@
 
 /* --------------------------------------- */
 /* Responsive Adjustments */
+/* Tablet */
 
 @media screen and (max-width: 820px) {
+  .component__alert--static,
+  .component__alert--closeable {
+    width: 90%;
+    font-size: 23px;
+  }
 }
 
+/* --------------------------------------- */
+/* Mobile */
+
 @media screen and (max-width: 430px) {
+  .component__alert--static,
+  .component__alert--closeable {
+    width: 100%;
+    font-size: 19px;
+  }
 }

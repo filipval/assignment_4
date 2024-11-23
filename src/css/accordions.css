@@ -67,9 +67,37 @@
 
 /* --------------------------------------- */
 /* Responsive Adjustments */
+/* Tablet */
 
 @media screen and (max-width: 820px) {
+  .accordion {
+    width: 60%;
+  }
+
+  .accordion__title,
+  .accordion__content {
+    font-size: 23px;
+  }
+
+  .accordion__toggle-arrow {
+    font-size: 20px;
+  }
 }
 
+/* --------------------------------------- */
+/* Mobile */
+
 @media screen and (max-width: 430px) {
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion__title,
+  .accordion__content {
+    font-size: 19px;
+  }
+
+  .accordion__toggle-arrow {
+    font-size: 18px;
+  }
 }
