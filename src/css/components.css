@@ -124,6 +124,10 @@ body {
 /* Tablet */
 
 @media screen and (max-width: 820px) {
+  body {
+    overflow: visible;
+  }
+
   .component__titles--container {
     position: fixed;
     top: 0;
@@ -134,7 +138,6 @@ body {
     background-color: var(--color-black);
     transition: left 0.3s ease;
     z-index: 1;
-    overflow: visible;
   }
 
   .component__titles--container--active {
