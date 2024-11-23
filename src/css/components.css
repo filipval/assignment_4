@@ -138,6 +138,8 @@ body {
     background-color: var(--color-black);
     transition: left 0.3s ease;
     z-index: 1;
+    max-height: 100vh;
+    overflow-y: auto;
   }
 
   .component__titles--container--active {
