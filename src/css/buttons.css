@@ -31,6 +31,7 @@
 
 .button__secondary {
   background-color: var(--color-secondary);
+  color: var(--color-black);
 }
 
 .button__secondary:hover {
@@ -46,6 +47,7 @@
 
 .button__tertiary {
   background-color: var(--color-background);
+  color: var(--color-black);
   border: 2px solid var(--color-black);
 }
 
@@ -62,6 +64,7 @@
 
 .button__ghost {
   background-color: var(--color-background);
+  color: var(--color-black);
 }
 
 .button__ghost:hover {
@@ -77,6 +80,7 @@
 
 .button__floating {
   background-color: var(--color-background);
+  color: var(--color-black);
   box-shadow: var(--shadow-light);
 }
 
@@ -94,6 +98,7 @@
 .button__disabled {
   cursor: not-allowed;
   background-color: var(--color-disabled);
+  color: var(--color-black);
 }
 
 /* --------------------------------------- */
@@ -157,9 +162,15 @@
 
   .button__size-m {
     padding: 13px 10px;
+    font-size: 15px;
   }
 
   .button__size-s {
     padding: 10px 15px;
+    font-size: 13px;
+  }
+
+  .button__size-xs {
+    font-size: 12px;
   }
 }
