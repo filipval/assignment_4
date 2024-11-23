@@ -41,6 +41,7 @@
 .accordion__toggle-arrow {
   transition: transform 0.3 linear;
   font-size: var(--font-size-base);
+  color: var(--color-black);
 }
 
 /* --------------------------------------- */
