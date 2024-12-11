@@ -9,7 +9,9 @@ To use the Design System, open the Netlify link (below), and click through the d
 ## Features
 
 Tabs menu to show the different components seperately.
+
 Different states of each component.
+
 Simple, responsive user interface.
 
 ## Netlify Deployment
